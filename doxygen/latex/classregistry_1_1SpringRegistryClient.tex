@@ -1,0 +1,138 @@
+\hypertarget{classregistry_1_1SpringRegistryClient}{}\section{registry\+:\+:Spring\+Registry\+Client Class Reference}
+\label{classregistry_1_1SpringRegistryClient}\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+
+
+{\ttfamily \#include $<$registry\+\_\+client.\+hpp$>$}
+
+
+
+Collaboration diagram for registry\+:\+:Spring\+Registry\+Client\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classregistry_1_1SpringRegistryClient__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classregistry_1_1SpringRegistryClient_1_1Impl}{Impl}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient_a891cfee599ee0ab6bd9239539a12f885}{Spring\+Registry\+Client} (std\+::string const \&name, \hyperlink{structregistry_1_1RegistryLocation}{Registry\+Location} const \&) noexcept
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient_a4328bd847a966b488d765dfb4a7836b9}{Spring\+Registry\+Client} (\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&)=delete
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient_ae8b83d3c6f6225205c059ea7ec20d721}{Spring\+Registry\+Client} (\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&\&)=delete
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} \& \hyperlink{classregistry_1_1SpringRegistryClient_a7e1ae35762aee96920b92d2ef3000809}{operator=} (\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&)=delete
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} \& \hyperlink{classregistry_1_1SpringRegistryClient_aae8253a337694bc64f268bea5e277348}{operator=} (\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&\&)=delete
+\item 
+void \hyperlink{classregistry_1_1SpringRegistryClient_a71cc90ee70c0f1de453ab39200bae41a}{publish} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&location) const
+\item 
+void \hyperlink{classregistry_1_1SpringRegistryClient_ab145f994204bb50543e24fd379ae6a21}{unpublish} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&name) const
+\item 
+\hyperlink{classregistry_1_1SpringRegistryClient_a4289550a022eee1ba06b32fdb529e9d1}{$\sim$\+Spring\+Registry\+Client} () noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classregistry_1_1SpringRegistryClient_1_1Impl}{Impl} $>$ const \hyperlink{classregistry_1_1SpringRegistryClient_a509b09f05c4caf239282663b41420a76}{pimpl\+\_\+}
+\item 
+\hyperlink{structregistry_1_1RegistryLocation}{Registry\+Location} const \hyperlink{classregistry_1_1SpringRegistryClient_a08350bc00947b986855eb6c462d03d2f}{regloc\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used by process (\hyperlink{classSpring}{Spring}) that want to generate data items and share them with other interested parties (Extractors). This class is used for communicating with a Registry as a \hyperlink{classSpring}{Spring}. It is not used generate data items. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a891cfee599ee0ab6bd9239539a12f885}\label{classregistry_1_1SpringRegistryClient_a891cfee599ee0ab6bd9239539a12f885}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!Spring\+Registry\+Client@{Spring\+Registry\+Client}}
+\index{Spring\+Registry\+Client@{Spring\+Registry\+Client}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{Spring\+Registry\+Client()}{SpringRegistryClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily registry\+::\+Spring\+Registry\+Client\+::\+Spring\+Registry\+Client (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{name,  }\item[{\hyperlink{structregistry_1_1RegistryLocation}{Registry\+Location} const \&}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a4328bd847a966b488d765dfb4a7836b9}\label{classregistry_1_1SpringRegistryClient_a4328bd847a966b488d765dfb4a7836b9}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!Spring\+Registry\+Client@{Spring\+Registry\+Client}}
+\index{Spring\+Registry\+Client@{Spring\+Registry\+Client}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{Spring\+Registry\+Client()}{SpringRegistryClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily registry\+::\+Spring\+Registry\+Client\+::\+Spring\+Registry\+Client (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_ae8b83d3c6f6225205c059ea7ec20d721}\label{classregistry_1_1SpringRegistryClient_ae8b83d3c6f6225205c059ea7ec20d721}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!Spring\+Registry\+Client@{Spring\+Registry\+Client}}
+\index{Spring\+Registry\+Client@{Spring\+Registry\+Client}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{Spring\+Registry\+Client()}{SpringRegistryClient()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily registry\+::\+Spring\+Registry\+Client\+::\+Spring\+Registry\+Client (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a4289550a022eee1ba06b32fdb529e9d1}\label{classregistry_1_1SpringRegistryClient_a4289550a022eee1ba06b32fdb529e9d1}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!````~Spring\+Registry\+Client@{$\sim$\+Spring\+Registry\+Client}}
+\index{````~Spring\+Registry\+Client@{$\sim$\+Spring\+Registry\+Client}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{$\sim$\+Spring\+Registry\+Client()}{~SpringRegistryClient()}}
+{\footnotesize\ttfamily registry\+::\+Spring\+Registry\+Client\+::$\sim$\+Spring\+Registry\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1SpringRegistryClient_a4289550a022eee1ba06b32fdb529e9d1_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a7e1ae35762aee96920b92d2ef3000809}\label{classregistry_1_1SpringRegistryClient_a7e1ae35762aee96920b92d2ef3000809}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client}\& registry\+::\+Spring\+Registry\+Client\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_aae8253a337694bc64f268bea5e277348}\label{classregistry_1_1SpringRegistryClient_aae8253a337694bc64f268bea5e277348}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client}\& registry\+::\+Spring\+Registry\+Client\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1SpringRegistryClient}{Spring\+Registry\+Client} const \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a71cc90ee70c0f1de453ab39200bae41a}\label{classregistry_1_1SpringRegistryClient_a71cc90ee70c0f1de453ab39200bae41a}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!publish@{publish}}
+\index{publish@{publish}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void registry\+::\+Spring\+Registry\+Client\+::publish (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&}]{location }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_ab145f994204bb50543e24fd379ae6a21}\label{classregistry_1_1SpringRegistryClient_ab145f994204bb50543e24fd379ae6a21}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!unpublish@{unpublish}}
+\index{unpublish@{unpublish}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{unpublish()}{unpublish()}}
+{\footnotesize\ttfamily void registry\+::\+Spring\+Registry\+Client\+::unpublish (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&}]{name }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1SpringRegistryClient_ab145f994204bb50543e24fd379ae6a21_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a509b09f05c4caf239282663b41420a76}\label{classregistry_1_1SpringRegistryClient_a509b09f05c4caf239282663b41420a76}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!pimpl\+\_\+@{pimpl\+\_\+}}
+\index{pimpl\+\_\+@{pimpl\+\_\+}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{pimpl\+\_\+}{pimpl\_}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classregistry_1_1SpringRegistryClient_1_1Impl}{Impl}$>$ const registry\+::\+Spring\+Registry\+Client\+::pimpl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1SpringRegistryClient_a08350bc00947b986855eb6c462d03d2f}\label{classregistry_1_1SpringRegistryClient_a08350bc00947b986855eb6c462d03d2f}} 
+\index{registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}!regloc\+\_\+@{regloc\+\_\+}}
+\index{regloc\+\_\+@{regloc\+\_\+}!registry\+::\+Spring\+Registry\+Client@{registry\+::\+Spring\+Registry\+Client}}
+\subsubsection{\texorpdfstring{regloc\+\_\+}{regloc\_}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1RegistryLocation}{Registry\+Location} const registry\+::\+Spring\+Registry\+Client\+::regloc\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+The location of the Registry that is used to lookup Reg\+Items to find the \hyperlink{classSpring}{Spring} we are interested in. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+registry/include/\hyperlink{registry__client_8hpp}{registry\+\_\+client.\+hpp}\item 
+registry/src/\hyperlink{registry__client__lib_8cpp}{registry\+\_\+client\+\_\+lib.\+cpp}\end{DoxyCompactItemize}

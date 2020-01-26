@@ -1,0 +1,34 @@
+cmake_minimum_required(VERSION 3.10)
+project(grpc-download NONE)
+
+set(_FINDPACKAGE_PROTOBUF_CONFIG_DIR "${CMAKE_CURRENT_BINARY_DIR}/protobuf/lib/cmake/protobuf")
+set(_CMAKE_ARGS_OPENSSL_ROOT_DIR "")
+if (OPENSSL_ROOT_DIR)
+  set(_CMAKE_ARGS_OPENSSL_ROOT_DIR "-DOPENSSL_ROOT_DIR:PATH=${OPENSSL_ROOT_DIR}")
+endif()
+
+include(ExternalProject)
+ExternalProject_Add(grpc
+  GIT_REPOSITORY    https://github.com/grpc/grpc.git
+  GIT_TAG           85e22ef28d55f27e8efb3d5e2e43ca6f59971065  # 2019-10-10
+  SOURCE_DIR        "${CMAKE_BINARY_DIR}/../grpc-src"
+  BINARY_DIR        "${CMAKE_BINARY_DIR}/../grpc-build"
+  PATCH_COMMAND     ""
+  CMAKE_CACHE_ARGS
+        -DgRPC_INSTALL:BOOL=ON
+        -DgRPC_BUILD_TESTS:BOOL=OFF
+        -DgRPC_PROTOBUF_PROVIDER:STRING=package
+        -DgRPC_PROTOBUF_PACKAGE_TYPE:STRING=CONFIG
+        -DProtobuf_DIR:PATH=${_FINDPACKAGE_PROTOBUF_CONFIG_DIR}
+        -DgRPC_ZLIB_PROVIDER:STRING=package
+        -DZLIB_ROOT:STRING=${CMAKE_CURRENT_BINARY_DIR}/zlib
+        -DgRPC_CARES_PROVIDER:STRING=package
+        -Dc-ares_DIR:PATH=${CMAKE_CURRENT_BINARY_DIR}/c-ares/lib/cmake/c-ares
+        -DgRPC_SSL_PROVIDER:STRING=package
+        ${_CMAKE_ARGS_OPENSSL_ROOT_DIR}
+        -DCMAKE_INSTALL_PREFIX:PATH=${CMAKE_CURRENT_BINARY_DIR}/grpc
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND     ""
+  INSTALL_COMMAND   ""
+  TEST_COMMAND      ""
+)

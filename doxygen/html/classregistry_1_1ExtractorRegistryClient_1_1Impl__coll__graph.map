@@ -1,0 +1,5 @@
+<map id="registry::ExtractorRegistryClient::Impl" name="registry::ExtractorRegistryClient::Impl">
+<area shape="rect" id="node2" href="$classregistry_1_1ClientComChannel.html" title="This is a proxy that allows Registry clients to use its services remotly. This is actually a wrapper ..." alt="" coords="97,359,279,553"/>
+<area shape="rect" id="node3" href="$structregistry_1_1RegistryLocation.html" title="{registry::RegistryLocation\n||+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ operator std::string()\l}" alt="" coords="5,145,176,296"/>
+<area shape="rect" id="node4" href="$classNetAddr.html" title="{NetAddr\n||}" alt="" coords="55,5,126,83"/>
+</map>

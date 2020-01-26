@@ -1,0 +1,110 @@
+\hypertarget{service__manager_8hpp}{}\section{registry/src/service\+\_\+manager.hpp File Reference}
+\label{service__manager_8hpp}\index{registry/src/service\+\_\+manager.\+hpp@{registry/src/service\+\_\+manager.\+hpp}}
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$future$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$glog/logging.\+h$>$}\newline
+Include dependency graph for service\+\_\+manager.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service__manager_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{service__manager_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classExecFailed}{Exec\+Failed}
+\item 
+class \hyperlink{classForkFailed}{Fork\+Failed}
+\item 
+class \hyperlink{classServiceManager}{Service\+Manager}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{service__manager_8hpp_a4a0b419c6d6dd0e1fd07f2b9ce01361d}{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}~\char`\"{}\+\_\+\+S\+RV\char`\"{}s
+\item 
+\#define \hyperlink{service__manager_8hpp_a63e483b4914d2e8c86befa3a8ddfac3a}{S\+E\+R\+V\+I\+CE}(s)~(!(strcmp(s, \hyperlink{service__manager_8hpp_a4a0b419c6d6dd0e1fd07f2b9ce01361d}{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME})))
+\item 
+\#define \hyperlink{service__manager_8hpp_a22f3cbf896998235040ea51191e0155e}{M\+O\+N\+I\+T\+OR}(s)~(!\hyperlink{service__manager_8hpp_a63e483b4914d2e8c86befa3a8ddfac3a}{S\+E\+R\+V\+I\+CE}(s))
+\item 
+\#define \hyperlink{service__manager_8hpp_a2e638e8507a2fbea0d33f88360c836e7}{N\+O\+I\+N\+TR}(e)
+\item 
+\#define \hyperlink{service__manager_8hpp_ad30931595ed9a32115758b6abfaad20b}{C\+H\+I\+LD}(p)~(0 == p)
+\item 
+\#define \hyperlink{service__manager_8hpp_a0fedd9d4ea4f19b7a979ec32d24648d3}{P\+A\+R\+E\+NT}(p)~(p $>$ 0)
+\item 
+\#define \hyperlink{service__manager_8hpp_a99dabe2bb6c3d3f2fffb06a9416d50d6}{C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{service__manager_8hpp_a99dabe2bb6c3d3f2fffb06a9416d50d6}\label{service__manager_8hpp_a99dabe2bb6c3d3f2fffb06a9416d50d6}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD@{C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD}}
+\index{C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD@{C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD}{CANCEL\_MONIT\_IN\_CHILD}}
+{\footnotesize\ttfamily \#define C\+A\+N\+C\+E\+L\+\_\+\+M\+O\+N\+I\+T\+\_\+\+I\+N\+\_\+\+C\+H\+I\+LD}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if} (in\_child\_)            \(\backslash\)
+            return;               \(\backslash\)
+\end{DoxyCode}
+\mbox{\Hypertarget{service__manager_8hpp_ad30931595ed9a32115758b6abfaad20b}\label{service__manager_8hpp_ad30931595ed9a32115758b6abfaad20b}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!C\+H\+I\+LD@{C\+H\+I\+LD}}
+\index{C\+H\+I\+LD@{C\+H\+I\+LD}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{C\+H\+I\+LD}{CHILD}}
+{\footnotesize\ttfamily \#define C\+H\+I\+LD(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~(0 == p)}
+
+\mbox{\Hypertarget{service__manager_8hpp_a22f3cbf896998235040ea51191e0155e}\label{service__manager_8hpp_a22f3cbf896998235040ea51191e0155e}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!M\+O\+N\+I\+T\+OR@{M\+O\+N\+I\+T\+OR}}
+\index{M\+O\+N\+I\+T\+OR@{M\+O\+N\+I\+T\+OR}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{M\+O\+N\+I\+T\+OR}{MONITOR}}
+{\footnotesize\ttfamily \#define M\+O\+N\+I\+T\+OR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~(!\hyperlink{service__manager_8hpp_a63e483b4914d2e8c86befa3a8ddfac3a}{S\+E\+R\+V\+I\+CE}(s))}
+
+\mbox{\Hypertarget{service__manager_8hpp_a2e638e8507a2fbea0d33f88360c836e7}\label{service__manager_8hpp_a2e638e8507a2fbea0d33f88360c836e7}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!N\+O\+I\+N\+TR@{N\+O\+I\+N\+TR}}
+\index{N\+O\+I\+N\+TR@{N\+O\+I\+N\+TR}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{N\+O\+I\+N\+TR}{NOINTR}}
+{\footnotesize\ttfamily \#define N\+O\+I\+N\+TR(\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(\{                                                      \(\backslash\)
+            int err\_;                                           \(\backslash\)
+            while ((err\_ = (e)) == -1 && errno == EINTR);       \(\backslash\)
+            err\_;                                               \(\backslash\)
+        \})
+\end{DoxyCode}
+\mbox{\Hypertarget{service__manager_8hpp_a0fedd9d4ea4f19b7a979ec32d24648d3}\label{service__manager_8hpp_a0fedd9d4ea4f19b7a979ec32d24648d3}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!P\+A\+R\+E\+NT@{P\+A\+R\+E\+NT}}
+\index{P\+A\+R\+E\+NT@{P\+A\+R\+E\+NT}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{P\+A\+R\+E\+NT}{PARENT}}
+{\footnotesize\ttfamily \#define P\+A\+R\+E\+NT(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~(p $>$ 0)}
+
+\mbox{\Hypertarget{service__manager_8hpp_a63e483b4914d2e8c86befa3a8ddfac3a}\label{service__manager_8hpp_a63e483b4914d2e8c86befa3a8ddfac3a}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!S\+E\+R\+V\+I\+CE@{S\+E\+R\+V\+I\+CE}}
+\index{S\+E\+R\+V\+I\+CE@{S\+E\+R\+V\+I\+CE}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+I\+CE}{SERVICE}}
+{\footnotesize\ttfamily \#define S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~(!(strcmp(s, \hyperlink{service__manager_8hpp_a4a0b419c6d6dd0e1fd07f2b9ce01361d}{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME})))}
+
+\mbox{\Hypertarget{service__manager_8hpp_a4a0b419c6d6dd0e1fd07f2b9ce01361d}\label{service__manager_8hpp_a4a0b419c6d6dd0e1fd07f2b9ce01361d}} 
+\index{service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}!S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME@{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}}
+\index{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME@{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}!service\+\_\+manager.\+hpp@{service\+\_\+manager.\+hpp}}
+\subsubsection{\texorpdfstring{S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME}{SERVICE\_INSTANCE\_NAME}}
+{\footnotesize\ttfamily \#define S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+N\+A\+ME~\char`\"{}\+\_\+\+S\+RV\char`\"{}s}
+

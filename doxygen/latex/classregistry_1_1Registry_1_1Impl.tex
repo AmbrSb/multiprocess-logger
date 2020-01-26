@@ -1,0 +1,186 @@
+\hypertarget{classregistry_1_1Registry_1_1Impl}{}\section{registry\+:\+:Registry$<$ C $>$\+:\+:Impl Class Reference}
+\label{classregistry_1_1Registry_1_1Impl}\index{registry\+::\+Registry$<$ C $>$\+::\+Impl@{registry\+::\+Registry$<$ C $>$\+::\+Impl}}
+
+
+Private implementation for \hyperlink{classregistry_1_1Registry}{Registry}.  
+
+
+
+
+{\ttfamily \#include $<$registry\+\_\+core.\+hpp$>$}
+
+
+
+Collaboration diagram for registry\+:\+:Registry$<$ C $>$\+:\+:Impl\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classregistry_1_1Registry_1_1Impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classregistry_1_1Registry_1_1Impl_a85e8ff2fc6f4aeb38d3757d9af276f03}{Register} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri)
+\item 
+void \hyperlink{classregistry_1_1Registry_1_1Impl_a8f5b6b353db1085370e980bb7b947cd5}{Unregister} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri)
+\item 
+void \hyperlink{classregistry_1_1Registry_1_1Impl_aef2278274443ae542fd42609fee58e2f}{Add\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb)
+\item 
+void \hyperlink{classregistry_1_1Registry_1_1Impl_a4f8d094ae023b9b5a785ee2ae0ec3d70}{Remove\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb)
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry_1_1Impl_ad31604a9866736b72747d185a26e212e}{Lookup} (\hyperlink{classregistry_1_1Filter}{Filter} flt)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry_1_1Impl_ac29aa7df0f8ffb6c2e7aff88938b933a}{Check\+Filters} (void)
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry_1_1Impl_a789ef808ca82b58f30d56de1543de6a3}{Check\+Filters} (\hyperlink{classregistry_1_1Filter}{Filter} const flt)
+\item 
+int \hyperlink{classregistry_1_1Registry_1_1Impl_ad4c82e293645478de0d0ad5e1dba9fed}{Check\+Callbacks} (void)
+\item 
+int \hyperlink{classregistry_1_1Registry_1_1Impl_a438306d63584a3668372c33bffb0ce28}{Check\+Callbacks} (\hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{Filter\+Callback} const \&fcb)
+\item 
+int \hyperlink{classregistry_1_1Registry_1_1Impl_a9005f008525bd41b8770070ea14c30f5}{Check\+Callbacks} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} const \&ri)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry_1_1Impl_a889b38b4e83271cf0b2f5dd0b7443754}{items\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{Filter\+Callback} $>$ \hyperlink{classregistry_1_1Registry_1_1Impl_ad808df523ce751861dbffbfcbe0bec86}{callbacks\+\_\+}
+\item 
+std\+::shared\+\_\+mutex \hyperlink{classregistry_1_1Registry_1_1Impl_a42ed4f996eacf243c2b6d3703363fc13}{items\+\_\+lock\+\_\+}
+\item 
+std\+::shared\+\_\+mutex \hyperlink{classregistry_1_1Registry_1_1Impl_a50a02d7a61ab99d3dcdb8440db8e9b48}{callbacks\+\_\+lock\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename C$>$\newline
+class registry\+::\+Registry$<$ C $>$\+::\+Impl}
+
+Private implementation for \hyperlink{classregistry_1_1Registry}{Registry}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C} & The channel used to expose the services of the \hyperlink{classregistry_1_1Registry}{Registry}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_aef2278274443ae542fd42609fee58e2f}\label{classregistry_1_1Registry_1_1Impl_aef2278274443ae542fd42609fee58e2f}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Add\+Callback@{Add\+Callback}}
+\index{Add\+Callback@{Add\+Callback}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Add\+Callback()}{AddCallback()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Add\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_ad4c82e293645478de0d0ad5e1dba9fed}\label{classregistry_1_1Registry_1_1Impl_ad4c82e293645478de0d0ad5e1dba9fed}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Check\+Callbacks@{Check\+Callbacks}}
+\index{Check\+Callbacks@{Check\+Callbacks}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Check\+Callbacks()}{CheckCallbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+int \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Check\+Callbacks (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a438306d63584a3668372c33bffb0ce28}\label{classregistry_1_1Registry_1_1Impl_a438306d63584a3668372c33bffb0ce28}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Check\+Callbacks@{Check\+Callbacks}}
+\index{Check\+Callbacks@{Check\+Callbacks}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Check\+Callbacks()}{CheckCallbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+int \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Check\+Callbacks (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{Filter\+Callback} const \&}]{fcb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a9005f008525bd41b8770070ea14c30f5}\label{classregistry_1_1Registry_1_1Impl_a9005f008525bd41b8770070ea14c30f5}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Check\+Callbacks@{Check\+Callbacks}}
+\index{Check\+Callbacks@{Check\+Callbacks}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Check\+Callbacks()}{CheckCallbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+int \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Check\+Callbacks (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item} const \&}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classregistry_1_1Registry_1_1Impl_a9005f008525bd41b8770070ea14c30f5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_ac29aa7df0f8ffb6c2e7aff88938b933a}\label{classregistry_1_1Registry_1_1Impl_ac29aa7df0f8ffb6c2e7aff88938b933a}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Check\+Filters@{Check\+Filters}}
+\index{Check\+Filters@{Check\+Filters}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Check\+Filters()}{CheckFilters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Check\+Filters (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a789ef808ca82b58f30d56de1543de6a3}\label{classregistry_1_1Registry_1_1Impl_a789ef808ca82b58f30d56de1543de6a3}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Check\+Filters@{Check\+Filters}}
+\index{Check\+Filters@{Check\+Filters}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Check\+Filters()}{CheckFilters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Check\+Filters (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter} const}]{flt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_ad31604a9866736b72747d185a26e212e}\label{classregistry_1_1Registry_1_1Impl_ad31604a9866736b72747d185a26e212e}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Lookup()}{Lookup()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Lookup (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a85e8ff2fc6f4aeb38d3757d9af276f03}\label{classregistry_1_1Registry_1_1Impl_a85e8ff2fc6f4aeb38d3757d9af276f03}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Register@{Register}}
+\index{Register@{Register}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Register (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a4f8d094ae023b9b5a785ee2ae0ec3d70}\label{classregistry_1_1Registry_1_1Impl_a4f8d094ae023b9b5a785ee2ae0ec3d70}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Remove\+Callback@{Remove\+Callback}}
+\index{Remove\+Callback@{Remove\+Callback}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Remove\+Callback()}{RemoveCallback()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Remove\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a8f5b6b353db1085370e980bb7b947cd5}\label{classregistry_1_1Registry_1_1Impl_a8f5b6b353db1085370e980bb7b947cd5}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::\+Unregister (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_ad808df523ce751861dbffbfcbe0bec86}\label{classregistry_1_1Registry_1_1Impl_ad808df523ce751861dbffbfcbe0bec86}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!callbacks\+\_\+@{callbacks\+\_\+}}
+\index{callbacks\+\_\+@{callbacks\+\_\+}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{callbacks\+\_\+}{callbacks\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+std\+::vector$<$\hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{Filter\+Callback}$>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::callbacks\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a50a02d7a61ab99d3dcdb8440db8e9b48}\label{classregistry_1_1Registry_1_1Impl_a50a02d7a61ab99d3dcdb8440db8e9b48}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!callbacks\+\_\+lock\+\_\+@{callbacks\+\_\+lock\+\_\+}}
+\index{callbacks\+\_\+lock\+\_\+@{callbacks\+\_\+lock\+\_\+}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{callbacks\+\_\+lock\+\_\+}{callbacks\_lock\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+std\+::shared\+\_\+mutex \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::callbacks\+\_\+lock\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a889b38b4e83271cf0b2f5dd0b7443754}\label{classregistry_1_1Registry_1_1Impl_a889b38b4e83271cf0b2f5dd0b7443754}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!items\+\_\+@{items\+\_\+}}
+\index{items\+\_\+@{items\+\_\+}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{items\+\_\+}{items\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+std\+::vector$<$\hyperlink{classregistry_1_1RegItem}{Reg\+Item}$>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::items\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_1_1Impl_a42ed4f996eacf243c2b6d3703363fc13}\label{classregistry_1_1Registry_1_1Impl_a42ed4f996eacf243c2b6d3703363fc13}} 
+\index{registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}!items\+\_\+lock\+\_\+@{items\+\_\+lock\+\_\+}}
+\index{items\+\_\+lock\+\_\+@{items\+\_\+lock\+\_\+}!registry\+::\+Registry\+::\+Impl@{registry\+::\+Registry\+::\+Impl}}
+\subsubsection{\texorpdfstring{items\+\_\+lock\+\_\+}{items\_lock\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+std\+::shared\+\_\+mutex \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Impl\+::items\+\_\+lock\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/src/\hyperlink{registry__core_8hpp}{registry\+\_\+core.\+hpp}\end{DoxyCompactItemize}

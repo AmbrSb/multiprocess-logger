@@ -1,0 +1,11 @@
+<map id="registry::operator==" name="registry::operator==">
+<area shape="rect" id="node2" href="$classregistry_1_1RegItem.html#a97aa7215ece49480a08c9cce9f8ed391" title="registry::RegItem::\lGetLocation" alt="" coords="217,104,348,145"/>
+<area shape="rect" id="node9" href="$classregistry_1_1Filter.html#a88b3490d87c58983a16acb2c5fba077e" title="registry::Filter::operator()" alt="" coords="200,170,365,197"/>
+<area shape="rect" id="node10" href="$classregistry_1_1ServerComChannel.html#aea787386e8aa90a93ff3e833b6f8aeb5" title="registry::ServerComChannel\l::ServerComChannel" alt="" coords="189,221,376,263"/>
+<area shape="rect" id="node3" href="$classregistry_1_1RegistryImplSQLite.html#ac7781e882e1e072fde41ced3842eec6c" title="registry::RegistryImplSQLite\l::Register" alt="" coords="424,5,611,47"/>
+<area shape="rect" id="node4" href="$classregistry_1_1RegistryImplSQLite.html#aed678237358b3024a2afe2d4585e0c54" title="registry::RegistryImplSQLite\l::Unregister" alt="" coords="424,71,611,112"/>
+<area shape="rect" id="node5" href="$classregistry_1_1ClientComChannel.html#ad5566f6f10790d9090975c5be8916d40" title="registry::ClientComChannel\l::Register" alt="" coords="426,136,609,177"/>
+<area shape="rect" id="node7" href="$classregistry_1_1ClientComChannel.html#a74566850580e7071fb6ec0f1f0498d05" title="registry::ClientComChannel\l::Unregister" alt="" coords="426,201,609,243"/>
+<area shape="rect" id="node6" href="$classregistry_1_1SpringRegistryClient_1_1Impl.html#a1b7694f4de9c0f95fe4ff76c54618057" title="registry::SpringRegistry\lClient::Impl::publish" alt="" coords="659,136,817,177"/>
+<area shape="rect" id="node8" href="$classregistry_1_1SpringRegistryClient_1_1Impl.html#ac3b721317dfb893e191d3d112575a627" title="registry::SpringRegistry\lClient::Impl::unpublish" alt="" coords="659,201,817,243"/>
+</map>

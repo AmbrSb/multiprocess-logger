@@ -1,0 +1,36 @@
+\hypertarget{monitor_8cpp}{}\section{registry/src/monitor.cpp File Reference}
+\label{monitor_8cpp}\index{registry/src/monitor.\+cpp@{registry/src/monitor.\+cpp}}
+{\ttfamily \#include $<$glog/logging.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}service\+\_\+manager.\+hpp\char`\"{}}\newline
+Include dependency graph for monitor.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{monitor_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{monitor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{monitor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{monitor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{monitor.\+cpp@{monitor.\+cpp}!main@{main}}
+\index{main@{main}!monitor.\+cpp@{monitor.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Simply create a \hyperlink{classServiceManager}{Service\+Manager} instance with argv\mbox{[}1\mbox{]} as the path of the the executable file of the service. The reset of argv\textquotesingle{}s are passed as arguments of the service.
+
+Now activate the service manager. This starts the monitoring thread and starts an instance of the service child process. Then Wait() on the service manager, which blocks until the service is stopped.Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{monitor_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,173 @@
+\hypertarget{structregistry_1_1BufferLocation}{}\section{registry\+:\+:Buffer\+Location Struct Reference}
+\label{structregistry_1_1BufferLocation}\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+
+
+{\ttfamily \#include $<$registry\+\_\+common.\+hpp$>$}
+
+
+
+Collaboration diagram for registry\+:\+:Buffer\+Location\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structregistry_1_1BufferLocation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}{Region} \{ \hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0aabe46bdcd661a69bbcbc5963274eee79}{k\+Near}, 
+\hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0a7ff68b6384eccdda3bc530b02228102d}{k\+Far}
+ \}\begin{DoxyCompactList}\small\item\em Supported types of ring buffers. \end{DoxyCompactList}
+\item 
+using \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type} = std\+::string
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structregistry_1_1BufferLocation_a30830e0d0cfae8971273c57a894242d9}{Buffer\+Location} (\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type} n) noexcept
+\item 
+\hyperlink{structregistry_1_1BufferLocation_a7e2e78fc0a567f47a9bb01e2d3683984}{Buffer\+Location} (\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type} n, \hyperlink{namespaceregistry_a2d7eac31eb792025667bcebdfe93dbf2}{Net\+Addr} const \&\hyperlink{structregistry_1_1BufferLocation_ad22f3b9cd359ad88ad3ddcad69fdb740}{addr}) noexcept
+\item 
+\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \& \hyperlink{structregistry_1_1BufferLocation_a545aea2299f77c020043efc9da9ab697}{operator=} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&b)=default
+\item 
+\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \& \hyperlink{structregistry_1_1BufferLocation_ac20495af404297a191fc8f4ed869e7c0}{operator=} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \&\&b) noexcept=default
+\item 
+\hyperlink{structregistry_1_1BufferLocation_a13e370aa3a10d57ca0f7a3ab109f9405}{Buffer\+Location} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&b)=default
+\item 
+\hyperlink{structregistry_1_1BufferLocation_a64f5245e74c8d9e544dc19057bcc2798}{Buffer\+Location} (\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \&\&b) noexcept=default
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type} \hyperlink{structregistry_1_1BufferLocation_a9941e0d8dceeb136a95c50bef3792082}{name}
+\begin{DoxyCompactList}\small\item\em The name of this ring buffer that is being expoded. \end{DoxyCompactList}\item 
+\hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}{Region} \hyperlink{structregistry_1_1BufferLocation_ad05676e193d5259c84e53f7037ed3878}{region}
+\item 
+\hyperlink{namespaceregistry_a2d7eac31eb792025667bcebdfe93dbf2}{Net\+Addr} \hyperlink{structregistry_1_1BufferLocation_ad22f3b9cd359ad88ad3ddcad69fdb740}{addr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}\label{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Name\+Type@{Name\+Type}}
+\index{Name\+Type@{Name\+Type}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Name\+Type}{NameType}}
+{\footnotesize\ttfamily using \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{registry\+::\+Buffer\+Location\+::\+Name\+Type} =  std\+::string}
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}\label{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Region@{Region}}
+\index{Region@{Region}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Region}{Region}}
+{\footnotesize\ttfamily enum \hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}{registry\+::\+Buffer\+Location\+::\+Region}}
+
+
+
+Supported types of ring buffers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Near@{k\+Near}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!k\+Near@{k\+Near}}}\mbox{\Hypertarget{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0aabe46bdcd661a69bbcbc5963274eee79}\label{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0aabe46bdcd661a69bbcbc5963274eee79}} 
+k\+Near&The buffer resides on the system computer as the client. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{k\+Far@{k\+Far}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!k\+Far@{k\+Far}}}\mbox{\Hypertarget{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0a7ff68b6384eccdda3bc530b02228102d}\label{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0a7ff68b6384eccdda3bc530b02228102d}} 
+k\+Far&The buffer resides on a remote system and should be accessed over a network. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a30830e0d0cfae8971273c57a894242d9}\label{structregistry_1_1BufferLocation_a30830e0d0cfae8971273c57a894242d9}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Buffer\+Location@{Buffer\+Location}}
+\index{Buffer\+Location@{Buffer\+Location}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Buffer\+Location()}{BufferLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily registry\+::\+Buffer\+Location\+::\+Buffer\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structregistry_1_1BufferLocation_a30830e0d0cfae8971273c57a894242d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a7e2e78fc0a567f47a9bb01e2d3683984}\label{structregistry_1_1BufferLocation_a7e2e78fc0a567f47a9bb01e2d3683984}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Buffer\+Location@{Buffer\+Location}}
+\index{Buffer\+Location@{Buffer\+Location}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Buffer\+Location()}{BufferLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily registry\+::\+Buffer\+Location\+::\+Buffer\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type}}]{n,  }\item[{\hyperlink{namespaceregistry_a2d7eac31eb792025667bcebdfe93dbf2}{Net\+Addr} const \&}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structregistry_1_1BufferLocation_a7e2e78fc0a567f47a9bb01e2d3683984_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a13e370aa3a10d57ca0f7a3ab109f9405}\label{structregistry_1_1BufferLocation_a13e370aa3a10d57ca0f7a3ab109f9405}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Buffer\+Location@{Buffer\+Location}}
+\index{Buffer\+Location@{Buffer\+Location}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Buffer\+Location()}{BufferLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily registry\+::\+Buffer\+Location\+::\+Buffer\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a64f5245e74c8d9e544dc19057bcc2798}\label{structregistry_1_1BufferLocation_a64f5245e74c8d9e544dc19057bcc2798}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!Buffer\+Location@{Buffer\+Location}}
+\index{Buffer\+Location@{Buffer\+Location}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{Buffer\+Location()}{BufferLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily registry\+::\+Buffer\+Location\+::\+Buffer\+Location (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_a545aea2299f77c020043efc9da9ab697}\label{structregistry_1_1BufferLocation_a545aea2299f77c020043efc9da9ab697}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location}\& registry\+::\+Buffer\+Location\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} const \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structregistry_1_1BufferLocation_a545aea2299f77c020043efc9da9ab697_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_ac20495af404297a191fc8f4ed869e7c0}\label{structregistry_1_1BufferLocation_ac20495af404297a191fc8f4ed869e7c0}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location}\& registry\+::\+Buffer\+Location\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} \&\&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_ad22f3b9cd359ad88ad3ddcad69fdb740}\label{structregistry_1_1BufferLocation_ad22f3b9cd359ad88ad3ddcad69fdb740}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!addr@{addr}}
+\index{addr@{addr}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{addr}{addr}}
+{\footnotesize\ttfamily \hyperlink{namespaceregistry_a2d7eac31eb792025667bcebdfe93dbf2}{Net\+Addr} registry\+::\+Buffer\+Location\+::addr}
+
+The \hyperlink{classNetAddr}{Net\+Addr} describing the location of this \hyperlink{structregistry_1_1BufferLocation}{Buffer\+Location} with respect to the Registry. \mbox{\Hypertarget{structregistry_1_1BufferLocation_a9941e0d8dceeb136a95c50bef3792082}\label{structregistry_1_1BufferLocation_a9941e0d8dceeb136a95c50bef3792082}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!name@{name}}
+\index{name@{name}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Name\+Type} registry\+::\+Buffer\+Location\+::name}
+
+
+
+The name of this ring buffer that is being expoded. 
+
+\mbox{\Hypertarget{structregistry_1_1BufferLocation_ad05676e193d5259c84e53f7037ed3878}\label{structregistry_1_1BufferLocation_ad05676e193d5259c84e53f7037ed3878}} 
+\index{registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}!region@{region}}
+\index{region@{region}!registry\+::\+Buffer\+Location@{registry\+::\+Buffer\+Location}}
+\subsubsection{\texorpdfstring{region}{region}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1BufferLocation_a07b156ecd0690dbebb5cba36d4d23ba0}{Region} registry\+::\+Buffer\+Location\+::region}
+
+The Region of this buffer location with respect to a given Registry. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/include/\hyperlink{registry__common_8hpp}{registry\+\_\+common.\+hpp}\end{DoxyCompactItemize}

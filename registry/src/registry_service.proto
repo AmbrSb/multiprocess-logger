@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package registry;
+
+enum ComChannelMode {
+    SERVER = 0;
+    CLIENT = 1;
+};
+
+message RgItm {
+    string name = 1;
+    string location = 2;
+};
+
+message Fltr {
+    string definition = 1;
+};
+
+message ComMsg {
+    ComChannelMode mode = 1;
+    Fltr fltr = 2;
+    repeated RgItm reg_item = 3;
+};
+
+message Result {
+    int32 code = 1;
+    string error_message = 2;
+    repeated RgItm reg_item = 3;
+};
+
+service RegistryService {
+    rpc Register (ComMsg) returns (Result) {}
+    rpc Unregister (ComMsg) returns (Result) {}
+    rpc Lookup (ComMsg) returns (Result) {}
+    rpc AddCallback(ComMsg) returns (Result) {}
+    rpc RemoveCallback(ComMsg) returns (Result) {}
+};

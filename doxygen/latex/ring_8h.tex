@@ -1,0 +1,134 @@
+\hypertarget{ring_8h}{}\section{ring/include/ring.h File Reference}
+\label{ring_8h}\index{ring/include/ring.\+h@{ring/include/ring.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ring\+\_\+common.\+h\char`\"{}}\newline
+Include dependency graph for ring.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{ring_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ring_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structring}{ring} $\ast$ \hyperlink{ring_8h_a80c8aa8225f51cf9c9ec3a1c5a7d3d8a}{ring\+\_\+init} (char const $\ast$name, size\+\_\+t n, size\+\_\+t elemsz)
+\begin{DoxyCompactList}\small\item\em Initialize a Boost M\+P\+MC queue in shared memory segment. \end{DoxyCompactList}\item 
+struct \hyperlink{structring}{ring} $\ast$ \hyperlink{ring_8h_a810b9648a02428d4c568ad755efd9b4d}{ring\+\_\+lookup} (char const $\ast$name)
+\begin{DoxyCompactList}\small\item\em Attach a ring to a predefined Boost M\+P\+MC queue in a shared memory segment. \end{DoxyCompactList}\item 
+int \hyperlink{ring_8h_a3ed31da6836da424f128b61eec563132}{ring\+\_\+free} (struct \hyperlink{structring}{ring} $\ast$r)
+\begin{DoxyCompactList}\small\item\em Destroy a predefined Boost M\+P\+MC queue in a shared memory segment. \end{DoxyCompactList}\item 
+int \hyperlink{ring_8h_a32134a04be829711c6100767fff94c02}{ring\+\_\+enqueue} (struct \hyperlink{structring}{ring} $\ast$r, struct \hyperlink{structelem}{elem} $\ast$e)
+\item 
+int \hyperlink{ring_8h_a5178b37c8ace7015293fc3b3eb331510}{ring\+\_\+dequeue} (struct \hyperlink{structring}{ring} $\ast$r, struct \hyperlink{structelem}{elem} $\ast$$\ast$e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ring_8h_a5178b37c8ace7015293fc3b3eb331510}\label{ring_8h_a5178b37c8ace7015293fc3b3eb331510}} 
+\index{ring.\+h@{ring.\+h}!ring\+\_\+dequeue@{ring\+\_\+dequeue}}
+\index{ring\+\_\+dequeue@{ring\+\_\+dequeue}!ring.\+h@{ring.\+h}}
+\subsubsection{\texorpdfstring{ring\+\_\+dequeue()}{ring\_dequeue()}}
+{\footnotesize\ttfamily int ring\+\_\+dequeue (\begin{DoxyParamCaption}\item[{struct \hyperlink{structring}{ring} $\ast$}]{r,  }\item[{struct \hyperlink{structelem}{elem} $\ast$$\ast$}]{e }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{ring_8h_a5178b37c8ace7015293fc3b3eb331510_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ring_8h_a32134a04be829711c6100767fff94c02}\label{ring_8h_a32134a04be829711c6100767fff94c02}} 
+\index{ring.\+h@{ring.\+h}!ring\+\_\+enqueue@{ring\+\_\+enqueue}}
+\index{ring\+\_\+enqueue@{ring\+\_\+enqueue}!ring.\+h@{ring.\+h}}
+\subsubsection{\texorpdfstring{ring\+\_\+enqueue()}{ring\_enqueue()}}
+{\footnotesize\ttfamily int ring\+\_\+enqueue (\begin{DoxyParamCaption}\item[{struct \hyperlink{structring}{ring} $\ast$}]{r,  }\item[{struct \hyperlink{structelem}{elem} $\ast$}]{e }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{ring_8h_a32134a04be829711c6100767fff94c02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ring_8h_a3ed31da6836da424f128b61eec563132}\label{ring_8h_a3ed31da6836da424f128b61eec563132}} 
+\index{ring.\+h@{ring.\+h}!ring\+\_\+free@{ring\+\_\+free}}
+\index{ring\+\_\+free@{ring\+\_\+free}!ring.\+h@{ring.\+h}}
+\subsubsection{\texorpdfstring{ring\+\_\+free()}{ring\_free()}}
+{\footnotesize\ttfamily int ring\+\_\+free (\begin{DoxyParamCaption}\item[{struct \hyperlink{structring}{ring} $\ast$}]{r }\end{DoxyParamCaption})}
+
+
+
+Destroy a predefined Boost M\+P\+MC queue in a shared memory segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct ring$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ring_8h_a80c8aa8225f51cf9c9ec3a1c5a7d3d8a}\label{ring_8h_a80c8aa8225f51cf9c9ec3a1c5a7d3d8a}} 
+\index{ring.\+h@{ring.\+h}!ring\+\_\+init@{ring\+\_\+init}}
+\index{ring\+\_\+init@{ring\+\_\+init}!ring.\+h@{ring.\+h}}
+\subsubsection{\texorpdfstring{ring\+\_\+init()}{ring\_init()}}
+{\footnotesize\ttfamily struct \hyperlink{structring}{ring}$\ast$ ring\+\_\+init (\begin{DoxyParamCaption}\item[{char const $\ast$}]{name,  }\item[{size\+\_\+t}]{n,  }\item[{size\+\_\+t}]{elemsz }\end{DoxyParamCaption})}
+
+
+
+Initialize a Boost M\+P\+MC queue in shared memory segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the queue. \\
+\hline
+{\em n} & The capacity of the queue. \\
+\hline
+{\em elemsz} & The size of individual items written to the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct ring$\ast$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{ring_8h_a80c8aa8225f51cf9c9ec3a1c5a7d3d8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ring_8h_a810b9648a02428d4c568ad755efd9b4d}\label{ring_8h_a810b9648a02428d4c568ad755efd9b4d}} 
+\index{ring.\+h@{ring.\+h}!ring\+\_\+lookup@{ring\+\_\+lookup}}
+\index{ring\+\_\+lookup@{ring\+\_\+lookup}!ring.\+h@{ring.\+h}}
+\subsubsection{\texorpdfstring{ring\+\_\+lookup()}{ring\_lookup()}}
+{\footnotesize\ttfamily struct \hyperlink{structring}{ring}$\ast$ ring\+\_\+lookup (\begin{DoxyParamCaption}\item[{char const $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Attach a ring to a predefined Boost M\+P\+MC queue in a shared memory segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+struct ring$\ast$ 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{ring_8h_a810b9648a02428d4c568ad755efd9b4d_icgraph}
+\end{center}
+\end{figure}

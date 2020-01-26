@@ -1,0 +1,5 @@
+<map id="registry::RegistryImplSQLite::Register" name="registry::RegistryImplSQLite::Register">
+<area shape="rect" id="node2" href="$classregistry_1_1RegItem.html#a36de17d47505b30932fb0666e151a3a5" title="registry::RegItem::\lGetName" alt="" coords="240,5,371,47"/>
+<area shape="rect" id="node3" href="$classregistry_1_1RegItem.html#a97aa7215ece49480a08c9cce9f8ed391" title="registry::RegItem::\lGetLocation" alt="" coords="240,71,371,112"/>
+<area shape="rect" id="node4" href="$namespaceregistry.html#a3aea015bffedea5734787cec200bfe1b" title="registry::operator==" alt="" coords="419,78,555,105"/>
+</map>

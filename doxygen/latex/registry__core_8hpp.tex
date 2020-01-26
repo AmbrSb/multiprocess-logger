@@ -1,0 +1,86 @@
+\hypertarget{registry__core_8hpp}{}\section{registry/src/registry\+\_\+core.hpp File Reference}
+\label{registry__core_8hpp}\index{registry/src/registry\+\_\+core.\+hpp@{registry/src/registry\+\_\+core.\+hpp}}
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$shared\+\_\+mutex$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+{\ttfamily \#include $<$grpcpp/grpcpp.\+h$>$}\newline
+{\ttfamily \#include $<$glog/logging.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}registry\+\_\+lcl.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}registry/registry\+\_\+service.\+grpc.\+pb.\+h\char`\"{}}\newline
+Include dependency graph for registry\+\_\+core.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{registry__core_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{registry__core_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classregistry_1_1RegistrationFailed}{registry\+::\+Registration\+Failed}
+\item 
+class \hyperlink{classregistry_1_1UnregistrationFailed}{registry\+::\+Unregistration\+Failed}
+\item 
+class \hyperlink{classregistry_1_1SQLite3OpenFailed}{registry\+::\+S\+Q\+Lite3\+Open\+Failed}
+\item 
+class \hyperlink{classregistry_1_1SQLite3InitDbFailed}{registry\+::\+S\+Q\+Lite3\+Init\+Db\+Failed}
+\item 
+class \hyperlink{classregistry_1_1SQLite3InsertionFailed}{registry\+::\+S\+Q\+Lite3\+Insertion\+Failed}
+\item 
+class \hyperlink{classregistry_1_1AbstractRegistry}{registry\+::\+Abstract\+Registry}
+\begin{DoxyCompactList}\small\item\em The interface for Registry classes. \end{DoxyCompactList}\item 
+class \hyperlink{classregistry_1_1RegistrySuper}{registry\+::\+Registry\+Super$<$ C, I $>$}
+\begin{DoxyCompactList}\small\item\em Maintains a list of \hyperlink{classregistry_1_1RegItem}{Reg\+Item}. \end{DoxyCompactList}\item 
+class \hyperlink{classregistry_1_1RegistryImplVec}{registry\+::\+Registry\+Impl\+Vec}
+\begin{DoxyCompactList}\small\item\em Private implementation for Registry. \end{DoxyCompactList}\item 
+class \hyperlink{classregistry_1_1RegistryImplSQLite}{registry\+::\+Registry\+Impl\+S\+Q\+Lite}
+\item 
+class \hyperlink{classregistry_1_1ComService}{registry\+::\+Com\+Service}
+\begin{DoxyCompactList}\small\item\em g\+R\+PC service implementation. \end{DoxyCompactList}\item 
+class \hyperlink{classregistry_1_1ServerComChannel}{registry\+::\+Server\+Com\+Channel}
+\begin{DoxyCompactList}\small\item\em Proxy for \hyperlink{classregistry_1_1ComService}{Com\+Service} used by Registry. \end{DoxyCompactList}\item 
+class \hyperlink{classregistry_1_1ClientComChannel}{registry\+::\+Client\+Com\+Channel}
+\begin{DoxyCompactList}\small\item\em This is a proxy that allows Registry clients to use its services remotly. This is actually a wrapper for the g\+R\+PC service stub. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceregistry}{registry}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{registry__core_8hpp_a8e344a5f1098eda0aa0bc66b1c45ace4}{R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename C $>$ }\\using \hyperlink{namespaceregistry_acde3104226ae0b7a590efe949ddec8e2}{registry\+::\+Registry} = Registry\+Super$<$ C, Registry\+Impl\+Vec $>$
+\item 
+{\footnotesize template$<$typename C $>$ }\\using \hyperlink{namespaceregistry_a6cd2ff083e7825c966c206645cafcc0f}{registry\+::\+Registry\+DB} = Registry\+Super$<$ C, Registry\+Impl\+S\+Q\+Lite $>$
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceregistry_ab4ecf4356115299551ca38f2f3cf15e1}{registry\+::operator==} (Abstract\+Registry\+::\+Filter\+Callback const \&fc1, Abstract\+Registry\+::\+Filter\+Callback const \&fc2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{registry__core_8hpp_a8e344a5f1098eda0aa0bc66b1c45ace4}\label{registry__core_8hpp_a8e344a5f1098eda0aa0bc66b1c45ace4}} 
+\index{registry\+\_\+core.\+hpp@{registry\+\_\+core.\+hpp}!R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI@{R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI}}
+\index{R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI@{R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI}!registry\+\_\+core.\+hpp@{registry\+\_\+core.\+hpp}}
+\subsubsection{\texorpdfstring{R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI}{REGISTRY\_API}}
+{\footnotesize\ttfamily \#define R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+A\+PI}
+

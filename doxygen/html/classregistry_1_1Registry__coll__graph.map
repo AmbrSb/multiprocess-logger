@@ -1,0 +1,8 @@
+<map id="registry::Registry&lt; C &gt;" name="registry::Registry&lt; C &gt;">
+<area shape="rect" id="node2" href="$classregistry_1_1AbstractRegistry.html" title="The interface for Registry classes. " alt="" coords="5,1213,176,1349"/>
+<area shape="rect" id="node5" href="$classregistry_1_1Registry_1_1Impl.html" title="Private implementation for Registry. " alt="" coords="274,927,417,1151"/>
+<area shape="rect" id="node8" href="$classregistry_1_1RegItem.html" title="{registry::RegItem\n||+ RegItem()\l+ RegItem()\l+ RegItem()\l+ RegItem()\l+ operator=()\l+ operator=()\l+ GetName()\l+ GetLocation()\l}" alt="" coords="284,515,407,695"/>
+<area shape="rect" id="node9" href="$structregistry_1_1BufferLocation.html" title="{registry::BufferLocation\n||+ BufferLocation()\l+ BufferLocation()\l+ operator=()\l+ operator=()\l+ BufferLocation()\l+ BufferLocation()\l}" alt="" coords="199,301,356,452"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="348,154,428,231"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="325,5,451,97"/>
+</map>

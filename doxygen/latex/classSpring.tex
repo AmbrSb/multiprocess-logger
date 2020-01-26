@@ -1,0 +1,119 @@
+\hypertarget{classSpring}{}\section{Spring Class Reference}
+\label{classSpring}\index{Spring@{Spring}}
+
+
+{\ttfamily \#include $<$spring\+\_\+common.\+hpp$>$}
+
+
+
+Collaboration diagram for Spring\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classSpring__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpring_abbbfe22a2b37ec7df976e7c2536541bf}{Spring} (std\+::string ownr\+\_\+name, std\+::string channel\+\_\+name, std\+::size\+\_\+t n, std\+::size\+\_\+t sz, std\+::string addr=\char`\"{}127.\+0.\+0.\+1\char`\"{}, in\+\_\+port\+\_\+t port=40040)
+\item 
+\hyperlink{classSpring_a70cd0c870d6afdf75bb4fcaafdbcdf41}{Spring} (\hyperlink{classSpring}{Spring} const \&)=delete
+\item 
+\hyperlink{classSpring_abe45ef79d37d2353383b4b24b38d7d88}{Spring} (\hyperlink{classSpring}{Spring} \&\&)=delete
+\item 
+\hyperlink{classSpring}{Spring} \& \hyperlink{classSpring_a3e15b14976e488d841565ed53a9b23ff}{operator=} (\hyperlink{classSpring}{Spring} const \&)=delete
+\item 
+\hyperlink{classSpring}{Spring} \& \hyperlink{classSpring_a0eae24fff36dcab466577403fb8bd78d}{operator=} (\hyperlink{classSpring}{Spring} \&\&)=delete
+\item 
+void \hyperlink{classSpring_acd49d999d964fe6f8165163974cd2968}{Push} (std\+::string data, std\+::size\+\_\+t id=0)
+\item 
+\hyperlink{classSpring_a8b5c6088814c8e343be53682f33866f1}{$\sim$\+Spring} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structring}{ring} $\ast$ \hyperlink{classSpring_a9f017cfb37f70e8e9ce9d72efbd9be73}{ring\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used by any client to create a \hyperlink{classSpring}{Spring} to register on a Registry and generate data items and publish them to a ring buffer. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpring_abbbfe22a2b37ec7df976e7c2536541bf}\label{classSpring_abbbfe22a2b37ec7df976e7c2536541bf}} 
+\index{Spring@{Spring}!Spring@{Spring}}
+\index{Spring@{Spring}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{Spring()}{Spring()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{std\+::string}]{ownr\+\_\+name,  }\item[{std\+::string}]{channel\+\_\+name,  }\item[{std\+::size\+\_\+t}]{n,  }\item[{std\+::size\+\_\+t}]{sz,  }\item[{std\+::string}]{addr = {\ttfamily \char`\"{}127.0.0.1\char`\"{}},  }\item[{in\+\_\+port\+\_\+t}]{port = {\ttfamily 40040} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classSpring_abbbfe22a2b37ec7df976e7c2536541bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSpring_a70cd0c870d6afdf75bb4fcaafdbcdf41}\label{classSpring_a70cd0c870d6afdf75bb4fcaafdbcdf41}} 
+\index{Spring@{Spring}!Spring@{Spring}}
+\index{Spring@{Spring}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{Spring()}{Spring()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{\hyperlink{classSpring}{Spring} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classSpring_abe45ef79d37d2353383b4b24b38d7d88}\label{classSpring_abe45ef79d37d2353383b4b24b38d7d88}} 
+\index{Spring@{Spring}!Spring@{Spring}}
+\index{Spring@{Spring}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{Spring()}{Spring()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{\hyperlink{classSpring}{Spring} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classSpring_a8b5c6088814c8e343be53682f33866f1}\label{classSpring_a8b5c6088814c8e343be53682f33866f1}} 
+\index{Spring@{Spring}!````~Spring@{$\sim$\+Spring}}
+\index{````~Spring@{$\sim$\+Spring}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{$\sim$\+Spring()}{~Spring()}}
+{\footnotesize\ttfamily Spring\+::$\sim$\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpring_a3e15b14976e488d841565ed53a9b23ff}\label{classSpring_a3e15b14976e488d841565ed53a9b23ff}} 
+\index{Spring@{Spring}!operator=@{operator=}}
+\index{operator=@{operator=}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classSpring}{Spring}\& Spring\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classSpring}{Spring} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classSpring_a0eae24fff36dcab466577403fb8bd78d}\label{classSpring_a0eae24fff36dcab466577403fb8bd78d}} 
+\index{Spring@{Spring}!operator=@{operator=}}
+\index{operator=@{operator=}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classSpring}{Spring}\& Spring\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classSpring}{Spring} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classSpring_acd49d999d964fe6f8165163974cd2968}\label{classSpring_acd49d999d964fe6f8165163974cd2968}} 
+\index{Spring@{Spring}!Push@{Push}}
+\index{Push@{Push}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily void Spring\+::\+Push (\begin{DoxyParamCaption}\item[{std\+::string}]{data,  }\item[{std\+::size\+\_\+t}]{id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classSpring_acd49d999d964fe6f8165163974cd2968_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSpring_a9f017cfb37f70e8e9ce9d72efbd9be73}\label{classSpring_a9f017cfb37f70e8e9ce9d72efbd9be73}} 
+\index{Spring@{Spring}!ring\+\_\+@{ring\+\_\+}}
+\index{ring\+\_\+@{ring\+\_\+}!Spring@{Spring}}
+\subsubsection{\texorpdfstring{ring\+\_\+}{ring\_}}
+{\footnotesize\ttfamily \hyperlink{structring}{ring}$\ast$ Spring\+::ring\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+A multi-\/producer multi-\/consumer lockfree ring buffer that resides in a shared memory by all interested parties. This is unique for all Buffer\+Location instances that compare equal. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+spring/include/\hyperlink{spring__common_8hpp}{spring\+\_\+common.\+hpp}\item 
+spring/src/\hyperlink{spring_8cpp}{spring.\+cpp}\end{DoxyCompactItemize}

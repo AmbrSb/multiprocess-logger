@@ -1,0 +1,6 @@
+<map id="FakeChan::FakeChan" name="FakeChan::FakeChan">
+<area shape="rect" id="node2" href="$classregistry_1_1RegistrySuper.html#a6293786807c1d9cc1f72a60c8c218b6f" title="Register a new RegItem with this Registry. " alt="" coords="204,5,360,47"/>
+<area shape="rect" id="node3" href="$classregistry_1_1RegistrySuper.html#a83240eacc385688b32998c1e83d086c5" title="Get a list of RegItems that match a given Filter. " alt="" coords="204,71,360,112"/>
+<area shape="rect" id="node4" href="$classregistry_1_1RegistrySuper.html#a3d35e055e1e69a00074701356e3e700f" title="Unregister a RegItem present in this Registry. " alt="" coords="204,136,360,177"/>
+<area shape="rect" id="node5" href="$classregistry_1_1RegistrySuper.html#a80e234502449509e0c9ce75e787ef974" title="registry::RegistrySuper\l::AddCallback" alt="" coords="204,201,360,243"/>
+</map>

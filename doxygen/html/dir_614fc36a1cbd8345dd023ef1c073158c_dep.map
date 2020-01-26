@@ -1,0 +1,18 @@
+<map id="extractor" name="extractor">
+<area shape="rect" id="node2" href="dir_bd7c6b182d7fdd2505430a7253eb5313.html" title="include" alt="" coords="75,123,147,171"/>
+<area shape="rect" id="node7" href="dir_46d97a6cd36e853ffbca3bf60579ea4f.html" title="ring" alt="" coords="148,219,220,267"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000001_000008.html" title="1" alt="" coords="157,191,165,206"/>
+<area shape="rect" id="node3" href="dir_ec2c4bde80170caf7387cbe20ea93893.html" title="src" alt="" coords="123,27,195,75"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000002_000001.html" title="1" alt="" coords="135,102,143,117"/>
+<area shape="rect" id="node5" href="dir_5da6ee3bc28636d3e8ad98255e1633d4.html" title="registry" alt="" coords="388,219,460,267"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000002_000004.html" title="1" alt="" coords="449,198,457,213"/>
+<area shape="rect" id="node4" href="dir_b6abedef5e01536eb421f2209a51fe92.html" title="test" alt="" coords="27,27,99,75"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000003_000001.html" title="1" alt="" coords="94,95,102,109"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000003_000004.html" title="1" alt="" coords="431,193,439,208"/>
+<area shape="rect" id="node6" href="dir_6b509eae23b7eb7c5c76086e35e50f75.html" title="spring" alt="" coords="315,123,387,171"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000003_000012.html" title="1" alt="" coords="297,103,305,118"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000003_000008.html" title="1" alt="" coords="187,192,195,207"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000012_000004.html" title="2" alt="" coords="397,191,405,206"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000012_000008.html" title="4" alt="" coords="236,221,244,235"/>
+<area shape="rect" id="clust1" href="dir_614fc36a1cbd8345dd023ef1c073158c.html" alt="" coords="16,16,304,181"/>
+</map>

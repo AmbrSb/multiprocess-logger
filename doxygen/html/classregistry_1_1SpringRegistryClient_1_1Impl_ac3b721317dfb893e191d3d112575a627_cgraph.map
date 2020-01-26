@@ -1,0 +1,6 @@
+<map id="registry::SpringRegistryClient::Impl::unpublish" name="registry::SpringRegistryClient::Impl::unpublish">
+<area shape="rect" id="node2" href="$classregistry_1_1ClientComChannel.html#a74566850580e7071fb6ec0f1f0498d05" title="registry::ClientComChannel\l::Unregister" alt="" coords="212,39,395,80"/>
+<area shape="rect" id="node3" href="$classregistry_1_1RegItem.html#a36de17d47505b30932fb0666e151a3a5" title="registry::RegItem::\lGetName" alt="" coords="443,5,573,47"/>
+<area shape="rect" id="node4" href="$classregistry_1_1RegItem.html#a97aa7215ece49480a08c9cce9f8ed391" title="registry::RegItem::\lGetLocation" alt="" coords="443,71,573,112"/>
+<area shape="rect" id="node5" href="$namespaceregistry.html#a3aea015bffedea5734787cec200bfe1b" title="registry::operator==" alt="" coords="621,78,757,105"/>
+</map>

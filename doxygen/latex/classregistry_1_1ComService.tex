@@ -1,0 +1,138 @@
+\hypertarget{classregistry_1_1ComService}{}\section{registry\+:\+:Com\+Service Class Reference}
+\label{classregistry_1_1ComService}\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+
+
+g\+R\+PC service implementation.  
+
+
+
+
+{\ttfamily \#include $<$registry\+\_\+core.\+hpp$>$}
+
+
+
+Inheritance diagram for registry\+:\+:Com\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classregistry_1_1ComService__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for registry\+:\+:Com\+Service\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1ComService__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregistry_1_1ComService_ac47bfa493c987731f6d7f6bc9a8adaf5}{Com\+Service} (\hyperlink{classregistry_1_1AbstractRegistry}{Abstract\+Registry} $\ast$ar)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+grpc\+::\+Status \hyperlink{classregistry_1_1ComService_aae8b56b86316397140c4f1cc4824410a}{Register} (grpc\+::\+Server\+Context $\ast$cxt, Com\+Msg const $\ast$msg, Result $\ast$rslt) override
+\item 
+grpc\+::\+Status \hyperlink{classregistry_1_1ComService_a6a64c38b8adf4443f387af7ed786245c}{Unregister} (grpc\+::\+Server\+Context $\ast$cxt, Com\+Msg const $\ast$msg, Result $\ast$rslt) override
+\item 
+grpc\+::\+Status \hyperlink{classregistry_1_1ComService_a06ba4b402944f87dbce6c2ce37d8c279}{Lookup} (grpc\+::\+Server\+Context $\ast$cxt, Com\+Msg const $\ast$msg, Result $\ast$rslt) override
+\item 
+grpc\+::\+Status \hyperlink{classregistry_1_1ComService_aebee320ae37a1a8ea31792ba1e8e7ad6}{Add\+Callback} (grpc\+::\+Server\+Context $\ast$cxt, Com\+Msg const $\ast$msg, Result $\ast$rslt) override
+\item 
+grpc\+::\+Status \hyperlink{classregistry_1_1ComService_a702848d7aad6839ba216862478c00d25}{Remove\+Callback} (grpc\+::\+Server\+Context $\ast$cxt, Com\+Msg const $\ast$msg, Result $\ast$rslt) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregistry_1_1AbstractRegistry}{Abstract\+Registry} $\ast$ \hyperlink{classregistry_1_1ComService_a308106b15416761e61709d608f10d726}{upstream\+\_\+}
+\begin{DoxyCompactList}\small\item\em An instance of Registry to be used to carry out the requested operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+g\+R\+PC service implementation. 
+
+This classes directly uses the services of the Registry class to respond to R\+PC request. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classregistry_1_1ComService_ac47bfa493c987731f6d7f6bc9a8adaf5}\label{classregistry_1_1ComService_ac47bfa493c987731f6d7f6bc9a8adaf5}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Com\+Service@{Com\+Service}}
+\index{Com\+Service@{Com\+Service}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Com\+Service()}{ComService()}}
+{\footnotesize\ttfamily registry\+::\+Com\+Service\+::\+Com\+Service (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1AbstractRegistry}{Abstract\+Registry} $\ast$}]{ar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1ComService_aebee320ae37a1a8ea31792ba1e8e7ad6}\label{classregistry_1_1ComService_aebee320ae37a1a8ea31792ba1e8e7ad6}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Add\+Callback@{Add\+Callback}}
+\index{Add\+Callback@{Add\+Callback}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Add\+Callback()}{AddCallback()}}
+{\footnotesize\ttfamily grpc\+::\+Status registry\+::\+Com\+Service\+::\+Add\+Callback (\begin{DoxyParamCaption}\item[{grpc\+::\+Server\+Context $\ast$}]{cxt,  }\item[{Com\+Msg const $\ast$}]{msg,  }\item[{Result $\ast$}]{rslt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1ComService_a06ba4b402944f87dbce6c2ce37d8c279}\label{classregistry_1_1ComService_a06ba4b402944f87dbce6c2ce37d8c279}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Lookup()}{Lookup()}}
+{\footnotesize\ttfamily grpc\+::\+Status registry\+::\+Com\+Service\+::\+Lookup (\begin{DoxyParamCaption}\item[{grpc\+::\+Server\+Context $\ast$}]{cxt,  }\item[{Com\+Msg const $\ast$}]{msg,  }\item[{Result $\ast$}]{rslt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1ComService_a06ba4b402944f87dbce6c2ce37d8c279_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1ComService_aae8b56b86316397140c4f1cc4824410a}\label{classregistry_1_1ComService_aae8b56b86316397140c4f1cc4824410a}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Register@{Register}}
+\index{Register@{Register}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily grpc\+::\+Status registry\+::\+Com\+Service\+::\+Register (\begin{DoxyParamCaption}\item[{grpc\+::\+Server\+Context $\ast$}]{cxt,  }\item[{Com\+Msg const $\ast$}]{msg,  }\item[{Result $\ast$}]{rslt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1ComService_aae8b56b86316397140c4f1cc4824410a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1ComService_a702848d7aad6839ba216862478c00d25}\label{classregistry_1_1ComService_a702848d7aad6839ba216862478c00d25}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Remove\+Callback@{Remove\+Callback}}
+\index{Remove\+Callback@{Remove\+Callback}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Remove\+Callback()}{RemoveCallback()}}
+{\footnotesize\ttfamily grpc\+::\+Status registry\+::\+Com\+Service\+::\+Remove\+Callback (\begin{DoxyParamCaption}\item[{grpc\+::\+Server\+Context $\ast$}]{cxt,  }\item[{Com\+Msg const $\ast$}]{msg,  }\item[{Result $\ast$}]{rslt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classregistry_1_1ComService_a6a64c38b8adf4443f387af7ed786245c}\label{classregistry_1_1ComService_a6a64c38b8adf4443f387af7ed786245c}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily grpc\+::\+Status registry\+::\+Com\+Service\+::\+Unregister (\begin{DoxyParamCaption}\item[{grpc\+::\+Server\+Context $\ast$}]{cxt,  }\item[{Com\+Msg const $\ast$}]{msg,  }\item[{Result $\ast$}]{rslt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1ComService_a6a64c38b8adf4443f387af7ed786245c_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classregistry_1_1ComService_a308106b15416761e61709d608f10d726}\label{classregistry_1_1ComService_a308106b15416761e61709d608f10d726}} 
+\index{registry\+::\+Com\+Service@{registry\+::\+Com\+Service}!upstream\+\_\+@{upstream\+\_\+}}
+\index{upstream\+\_\+@{upstream\+\_\+}!registry\+::\+Com\+Service@{registry\+::\+Com\+Service}}
+\subsubsection{\texorpdfstring{upstream\+\_\+}{upstream\_}}
+{\footnotesize\ttfamily \hyperlink{classregistry_1_1AbstractRegistry}{Abstract\+Registry}$\ast$ registry\+::\+Com\+Service\+::upstream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An instance of Registry to be used to carry out the requested operations. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/src/\hyperlink{registry__core_8hpp}{registry\+\_\+core.\+hpp}\end{DoxyCompactItemize}

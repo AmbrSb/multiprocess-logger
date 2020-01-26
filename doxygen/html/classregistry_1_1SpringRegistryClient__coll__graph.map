@@ -1,0 +1,8 @@
+<map id="registry::SpringRegistryClient" name="registry::SpringRegistryClient">
+<area shape="rect" id="node3" href="$classregistry_1_1SpringRegistryClient_1_1Impl.html" title="{registry::SpringRegistry\lClient::Impl\n||+ Impl()\l+ Impl()\l+ Impl()\l+ operator=()\l+ operator=()\l+ ~Impl()\l+ publish()\l+ unpublish()\l}" alt="" coords="181,616,339,811"/>
+<area shape="rect" id="node4" href="$classregistry_1_1ClientComChannel.html" title="This is a proxy that allows Registry clients to use its services remotly. This is actually a wrapper ..." alt="" coords="169,359,351,553"/>
+<area shape="rect" id="node5" href="$structregistry_1_1RegistryLocation.html" title="{registry::RegistryLocation\n||+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ RegistryLocation()\l+ operator std::string()\l}" alt="" coords="5,145,176,296"/>
+<area shape="rect" id="node6" href="$classNetAddr.html" title="{NetAddr\n||}" alt="" coords="55,5,126,83"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="397,417,477,495"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="394,175,521,267"/>
+</map>

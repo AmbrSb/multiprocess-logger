@@ -1,0 +1,140 @@
+\hypertarget{classregistry_1_1Filter}{}\section{registry\+:\+:Filter Class Reference}
+\label{classregistry_1_1Filter}\index{registry\+::\+Filter@{registry\+::\+Filter}}
+
+
+This class is used to search a Registry for Reg\+Items that match a specific pattern.  
+
+
+
+
+{\ttfamily \#include $<$registry\+\_\+common.\+hpp$>$}
+
+
+
+Collaboration diagram for registry\+:\+:Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classregistry_1_1Filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregistry_1_1Filter_a91fa4858a3facd5ae4f302426ec0c126}{Filter} (\hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const \&filter\+\_\+text)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classregistry_1_1Filter_adb0037080036d7a808776054719bfb8c}{Filter} (T const \&fltr)
+\item 
+\hyperlink{classregistry_1_1Filter_a46e0bdb0721240eb83204817659bc1c0}{$\sim$\+Filter} () noexcept=default
+\item 
+bool \hyperlink{classregistry_1_1Filter_a88b3490d87c58983a16acb2c5fba077e}{operator()} (\hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const \&name) const
+\item 
+\hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const  \& \hyperlink{classregistry_1_1Filter_ac0f7882d01e05fe52a3d71b548aabd50}{Get\+Filter\+Text} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} = \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Buffer\+Location\+::\+Name\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Buffer\+Location\+::\+Name\+Type} \hyperlink{classregistry_1_1Filter_a36d1de00325358200ebe9edadc92f14f}{filter\+\_\+}
+\begin{DoxyCompactList}\small\item\em This is the specific pattern used to query a Registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classregistry_1_1Filter_a2258c07ccd7708c4f4cad83338a14c4d}{operator==} (\hyperlink{classregistry_1_1Filter}{Filter} const \&, \hyperlink{classregistry_1_1Filter}{Filter} const \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to search a Registry for Reg\+Items that match a specific pattern. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}\label{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!Name\+Type@{Name\+Type}}
+\index{Name\+Type@{Name\+Type}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{Name\+Type}{NameType}}
+{\footnotesize\ttfamily using \hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{registry\+::\+Filter\+::\+Name\+Type} =  \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Buffer\+Location\+::\+Name\+Type}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classregistry_1_1Filter_a91fa4858a3facd5ae4f302426ec0c126}\label{classregistry_1_1Filter_a91fa4858a3facd5ae4f302426ec0c126}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{Filter()}{Filter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily registry\+::\+Filter\+::\+Filter (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const \&}]{filter\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classregistry_1_1Filter_adb0037080036d7a808776054719bfb8c}\label{classregistry_1_1Filter_adb0037080036d7a808776054719bfb8c}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!Filter@{Filter}}
+\index{Filter@{Filter}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{Filter()}{Filter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+registry\+::\+Filter\+::\+Filter (\begin{DoxyParamCaption}\item[{T const \&}]{fltr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classregistry_1_1Filter_a46e0bdb0721240eb83204817659bc1c0}\label{classregistry_1_1Filter_a46e0bdb0721240eb83204817659bc1c0}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!````~Filter@{$\sim$\+Filter}}
+\index{````~Filter@{$\sim$\+Filter}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Filter()}{~Filter()}}
+{\footnotesize\ttfamily registry\+::\+Filter\+::$\sim$\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1Filter_ac0f7882d01e05fe52a3d71b548aabd50}\label{classregistry_1_1Filter_ac0f7882d01e05fe52a3d71b548aabd50}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!Get\+Filter\+Text@{Get\+Filter\+Text}}
+\index{Get\+Filter\+Text@{Get\+Filter\+Text}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{Get\+Filter\+Text()}{GetFilterText()}}
+{\footnotesize\ttfamily \hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const\& registry\+::\+Filter\+::\+Get\+Filter\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1Filter_ac0f7882d01e05fe52a3d71b548aabd50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Filter_a88b3490d87c58983a16acb2c5fba077e}\label{classregistry_1_1Filter_a88b3490d87c58983a16acb2c5fba077e}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!operator()@{operator()}}
+\index{operator()@{operator()}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily bool registry\+::\+Filter\+::operator() (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter_adca74845d8a5adb325dea6fb17dbcb2e}{Name\+Type} const \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classregistry_1_1Filter_a88b3490d87c58983a16acb2c5fba077e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1Filter_a2258c07ccd7708c4f4cad83338a14c4d}\label{classregistry_1_1Filter_a2258c07ccd7708c4f4cad83338a14c4d}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!operator==@{operator==}}
+\index{operator==@{operator==}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter} const \&}]{f1,  }\item[{\hyperlink{classregistry_1_1Filter}{Filter} const \&}]{f2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classregistry_1_1Filter_a36d1de00325358200ebe9edadc92f14f}\label{classregistry_1_1Filter_a36d1de00325358200ebe9edadc92f14f}} 
+\index{registry\+::\+Filter@{registry\+::\+Filter}!filter\+\_\+@{filter\+\_\+}}
+\index{filter\+\_\+@{filter\+\_\+}!registry\+::\+Filter@{registry\+::\+Filter}}
+\subsubsection{\texorpdfstring{filter\+\_\+}{filter\_}}
+{\footnotesize\ttfamily \hyperlink{structregistry_1_1BufferLocation_ad3c2279012b74798fa1e348507020fa4}{Buffer\+Location\+::\+Name\+Type} registry\+::\+Filter\+::filter\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is the specific pattern used to query a Registry. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/include/\hyperlink{registry__common_8hpp}{registry\+\_\+common.\+hpp}\end{DoxyCompactItemize}

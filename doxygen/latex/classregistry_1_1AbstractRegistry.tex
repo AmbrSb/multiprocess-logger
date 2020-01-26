@@ -1,0 +1,147 @@
+\hypertarget{classregistry_1_1AbstractRegistry}{}\section{registry\+:\+:Abstract\+Registry Class Reference}
+\label{classregistry_1_1AbstractRegistry}\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+
+
+The interface for Registry classes.  
+
+
+
+
+{\ttfamily \#include $<$registry\+\_\+core.\+hpp$>$}
+
+
+
+Inheritance diagram for registry\+:\+:Abstract\+Registry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classregistry_1_1AbstractRegistry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for registry\+:\+:Abstract\+Registry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classregistry_1_1AbstractRegistry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} = std\+::function$<$ void(std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$)$>$
+\item 
+using \hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{Filter\+Callback} = std\+::tuple$<$ \hyperlink{classregistry_1_1Filter}{Filter}, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classregistry_1_1AbstractRegistry_a5deafe61aa33b1be6b261d815e7397a1}{Register} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri) noexcept=0
+\item 
+virtual void \hyperlink{classregistry_1_1AbstractRegistry_ac5bb3b6a75a63a474f6b0afb31ea51c1}{Unregister} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri) noexcept=0
+\item 
+virtual void \hyperlink{classregistry_1_1AbstractRegistry_a83f61ca483c22185ddf43653ca65a8ef}{Add\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb) noexcept=0
+\item 
+virtual void \hyperlink{classregistry_1_1AbstractRegistry_ae09a4b165d916b6c212988d882d1a33f}{Remove\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb) noexcept=0
+\item 
+virtual std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1AbstractRegistry_a978d5b55eeea945b0cc441e28a084518}{Lookup} (\hyperlink{classregistry_1_1Filter}{Filter} flt) noexcept=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface for Registry classes. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}\label{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Callback@{Callback}}
+\index{Callback@{Callback}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily using \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{registry\+::\+Abstract\+Registry\+::\+Callback} =  std\+::function$<$void(std\+::vector$<$\hyperlink{classregistry_1_1RegItem}{Reg\+Item}$>$)$>$}
+
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}\label{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Filter\+Callback@{Filter\+Callback}}
+\index{Filter\+Callback@{Filter\+Callback}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Filter\+Callback}{FilterCallback}}
+{\footnotesize\ttfamily using \hyperlink{classregistry_1_1AbstractRegistry_a31f6bef634dcd324efebaf55f99b950f}{registry\+::\+Abstract\+Registry\+::\+Filter\+Callback} =  std\+::tuple$<$\hyperlink{classregistry_1_1Filter}{Filter}, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}$>$}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_a83f61ca483c22185ddf43653ca65a8ef}\label{classregistry_1_1AbstractRegistry_a83f61ca483c22185ddf43653ca65a8ef}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Add\+Callback@{Add\+Callback}}
+\index{Add\+Callback@{Add\+Callback}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Add\+Callback()}{AddCallback()}}
+{\footnotesize\ttfamily virtual void registry\+::\+Abstract\+Registry\+::\+Add\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{classregistry_1_1RegistrySuper_a80e234502449509e0c9ce75e787ef974}{registry\+::\+Registry\+Super$<$ C, I $>$}.
+
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_a978d5b55eeea945b0cc441e28a084518}\label{classregistry_1_1AbstractRegistry_a978d5b55eeea945b0cc441e28a084518}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Lookup()}{Lookup()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\hyperlink{classregistry_1_1RegItem}{Reg\+Item}$>$ registry\+::\+Abstract\+Registry\+::\+Lookup (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{classregistry_1_1RegistrySuper_a83240eacc385688b32998c1e83d086c5}{registry\+::\+Registry\+Super$<$ C, I $>$}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1AbstractRegistry_a978d5b55eeea945b0cc441e28a084518_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_a5deafe61aa33b1be6b261d815e7397a1}\label{classregistry_1_1AbstractRegistry_a5deafe61aa33b1be6b261d815e7397a1}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Register@{Register}}
+\index{Register@{Register}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily virtual void registry\+::\+Abstract\+Registry\+::\+Register (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{classregistry_1_1RegistrySuper_a6293786807c1d9cc1f72a60c8c218b6f}{registry\+::\+Registry\+Super$<$ C, I $>$}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1AbstractRegistry_a5deafe61aa33b1be6b261d815e7397a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_ae09a4b165d916b6c212988d882d1a33f}\label{classregistry_1_1AbstractRegistry_ae09a4b165d916b6c212988d882d1a33f}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Remove\+Callback@{Remove\+Callback}}
+\index{Remove\+Callback@{Remove\+Callback}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Remove\+Callback()}{RemoveCallback()}}
+{\footnotesize\ttfamily virtual void registry\+::\+Abstract\+Registry\+::\+Remove\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{classregistry_1_1RegistrySuper_a61948ba29418a844f1b2c9b1259e26bf}{registry\+::\+Registry\+Super$<$ C, I $>$}.
+
+\mbox{\Hypertarget{classregistry_1_1AbstractRegistry_ac5bb3b6a75a63a474f6b0afb31ea51c1}\label{classregistry_1_1AbstractRegistry_ac5bb3b6a75a63a474f6b0afb31ea51c1}} 
+\index{registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!registry\+::\+Abstract\+Registry@{registry\+::\+Abstract\+Registry}}
+\subsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily virtual void registry\+::\+Abstract\+Registry\+::\+Unregister (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implemented in \hyperlink{classregistry_1_1RegistrySuper_a3d35e055e1e69a00074701356e3e700f}{registry\+::\+Registry\+Super$<$ C, I $>$}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classregistry_1_1AbstractRegistry_ac5bb3b6a75a63a474f6b0afb31ea51c1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/src/\hyperlink{registry__core_8hpp}{registry\+\_\+core.\+hpp}\end{DoxyCompactItemize}

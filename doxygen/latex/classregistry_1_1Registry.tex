@@ -1,0 +1,342 @@
+\hypertarget{classregistry_1_1Registry}{}\section{registry\+:\+:Registry$<$ C $>$ Class Template Reference}
+\label{classregistry_1_1Registry}\index{registry\+::\+Registry$<$ C $>$@{registry\+::\+Registry$<$ C $>$}}
+
+
+Maintains a list of \hyperlink{classregistry_1_1RegItem}{Reg\+Item}.  
+
+
+
+
+{\ttfamily \#include $<$registry\+\_\+core.\+hpp$>$}
+
+
+
+Inheritance diagram for registry\+:\+:Registry$<$ C $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classregistry_1_1Registry__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for registry\+:\+:Registry$<$ C $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classregistry_1_1Registry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classregistry_1_1Registry_1_1Impl}{Impl}
+\begin{DoxyCompactList}\small\item\em Private implementation for \hyperlink{classregistry_1_1Registry}{Registry}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregistry_1_1Registry_af21c2f4bde1c2fdcd4d77da773ec570c}{Registry} () noexcept
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classregistry_1_1Registry_ae4e32a61c71b9014a96505346147924a}{Registry} (Args \&\&...) noexcept
+\begin{DoxyCompactList}\small\item\em Constructor template. \end{DoxyCompactList}\item 
+\hyperlink{classregistry_1_1Registry_a94a766d55d2bacfbf8eda23efb742d92}{Registry} (\hyperlink{classregistry_1_1Registry}{Registry} const \&r)=delete
+\item 
+\hyperlink{classregistry_1_1Registry_ae2d265e4cbbdda86f81c631ebb91f865}{Registry} (\hyperlink{classregistry_1_1Registry}{Registry} \&\&r) noexcept=default
+\item 
+\hyperlink{classregistry_1_1Registry}{Registry} \& \hyperlink{classregistry_1_1Registry_a64553c5b4bc597a69876b614fe1eeab3}{operator=} (\hyperlink{classregistry_1_1Registry}{Registry} const \&r)=delete
+\item 
+\hyperlink{classregistry_1_1Registry}{Registry} \& \hyperlink{classregistry_1_1Registry_a3faca0c879dc001f097ba069c13cf6a1}{operator=} (\hyperlink{classregistry_1_1Registry}{Registry} \&\&r) noexcept=default
+\item 
+\hyperlink{classregistry_1_1Registry_aea422f465bd0d2dba7e08f68b1dfc724}{$\sim$\+Registry} () noexcept
+\item 
+void \hyperlink{classregistry_1_1Registry_a2d44265acc3db0fdea9df1a67a14206c}{Register} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri) noexcept override
+\begin{DoxyCompactList}\small\item\em Register a new \hyperlink{classregistry_1_1RegItem}{Reg\+Item} with this \hyperlink{classregistry_1_1Registry}{Registry}. \end{DoxyCompactList}\item 
+void \hyperlink{classregistry_1_1Registry_ad020a0ef83e4a29064ad95baf2e0796f}{Unregister} (\hyperlink{classregistry_1_1RegItem}{Reg\+Item} ri) noexcept override
+\begin{DoxyCompactList}\small\item\em Unregister a \hyperlink{classregistry_1_1RegItem}{Reg\+Item} present in this \hyperlink{classregistry_1_1Registry}{Registry}. \end{DoxyCompactList}\item 
+void \hyperlink{classregistry_1_1Registry_aa59df03bcaccf9a9687dbedc4e36cf33}{Add\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb) noexcept override
+\item 
+void \hyperlink{classregistry_1_1Registry_ac3c1835aad71067924526040fccc5ce3}{Remove\+Callback} (\hyperlink{classregistry_1_1Filter}{Filter} flt, \hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback} cb) noexcept override
+\item 
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry_a15423d8f77a60eb8de72b851d2d34318}{Lookup} (\hyperlink{classregistry_1_1Filter}{Filter} flt) noexcept override
+\begin{DoxyCompactList}\small\item\em Get a list of Reg\+Items that match a given \hyperlink{classregistry_1_1Filter}{Filter}. \end{DoxyCompactList}\item 
+void \hyperlink{classregistry_1_1Registry_a984878071c9b250148282b2b08bf999b}{Wait} ()
+\begin{DoxyCompactList}\small\item\em Blocks on the underlying channel C. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classregistry_1_1Registry_a8e577f4054494ec562dcb84f99a613b0}{Registry} (Args \&\&... args) noexcept
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classregistry_1_1Registry_1_1Impl}{Impl} $>$ \hyperlink{classregistry_1_1Registry_a027d968f8cf69061ba3a3ed5e0801874}{pimpl\+\_\+}
+\begin{DoxyCompactList}\small\item\em A pointer to the private implemenation of \hyperlink{classregistry_1_1Registry}{Registry}, implementing the P\+I\+M\+PL idiom. \end{DoxyCompactList}\item 
+C \hyperlink{classregistry_1_1Registry_a12c8c9619c8f4ad1fba66b58b4da0dca}{downstream\+\_\+}
+\begin{DoxyCompactList}\small\item\em The communication channel used to access this \hyperlink{classregistry_1_1Registry}{Registry}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename C$>$\newline
+class registry\+::\+Registry$<$ C $>$}
+
+Maintains a list of \hyperlink{classregistry_1_1RegItem}{Reg\+Item}. 
+
+\hyperlink{classregistry_1_1Registry}{Registry} is responsible for maintaining a list of \hyperlink{classregistry_1_1RegItem}{Reg\+Item}. It exposes its services through a channel defined by C.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em C} & This is a channel that exposes to its clients the services of \hyperlink{classregistry_1_1Registry}{Registry} in any way it desires. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classregistry_1_1Registry_af21c2f4bde1c2fdcd4d77da773ec570c}\label{classregistry_1_1Registry_af21c2f4bde1c2fdcd4d77da773ec570c}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Registry()}{Registry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_ae4e32a61c71b9014a96505346147924a}\label{classregistry_1_1Registry_ae4e32a61c71b9014a96505346147924a}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Registry()}{Registry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+template$<$typename... Args$>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}\item[{Args \&\&}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Constructor template. 
+
+This constructor template constructs a communication channel of type C using the parameters passed in Args.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & Arguments passed to the constructor of C \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classregistry_1_1Registry_a94a766d55d2bacfbf8eda23efb742d92}\label{classregistry_1_1Registry_a94a766d55d2bacfbf8eda23efb742d92}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Registry()}{Registry()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Registry}{Registry}$<$ C $>$ const \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_ae2d265e4cbbdda86f81c631ebb91f865}\label{classregistry_1_1Registry_ae2d265e4cbbdda86f81c631ebb91f865}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Registry()}{Registry()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Registry}{Registry}$<$ C $>$ \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_aea422f465bd0d2dba7e08f68b1dfc724}\label{classregistry_1_1Registry_aea422f465bd0d2dba7e08f68b1dfc724}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!````~Registry@{$\sim$\+Registry}}
+\index{````~Registry@{$\sim$\+Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{$\sim$\+Registry()}{~Registry()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::$\sim$\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classregistry_1_1Registry_aea422f465bd0d2dba7e08f68b1dfc724_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_a8e577f4054494ec562dcb84f99a613b0}\label{classregistry_1_1Registry_a8e577f4054494ec562dcb84f99a613b0}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Registry()}{Registry()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+template$<$typename... Args$>$ \\
+\hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::\hyperlink{classregistry_1_1Registry}{Registry} (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classregistry_1_1Registry_a8e577f4054494ec562dcb84f99a613b0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classregistry_1_1Registry_aa59df03bcaccf9a9687dbedc4e36cf33}\label{classregistry_1_1Registry_aa59df03bcaccf9a9687dbedc4e36cf33}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Add\+Callback@{Add\+Callback}}
+\index{Add\+Callback@{Add\+Callback}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Add\+Callback()}{AddCallback()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Add\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements \hyperlink{classregistry_1_1AbstractRegistry_a83f61ca483c22185ddf43653ca65a8ef}{registry\+::\+Abstract\+Registry}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classregistry_1_1Registry_aa59df03bcaccf9a9687dbedc4e36cf33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_a15423d8f77a60eb8de72b851d2d34318}\label{classregistry_1_1Registry_a15423d8f77a60eb8de72b851d2d34318}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Lookup@{Lookup}}
+\index{Lookup@{Lookup}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Lookup()}{Lookup()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+std\+::vector$<$ \hyperlink{classregistry_1_1RegItem}{Reg\+Item} $>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Lookup (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Get a list of Reg\+Items that match a given \hyperlink{classregistry_1_1Filter}{Filter}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flt} & The filter compared against the field \hyperlink{classregistry_1_1RegItem_a6e5945a427995b5f881403cd155b2a22}{Reg\+Item.\+name\+\_\+} for all \hyperlink{classregistry_1_1RegItem}{Reg\+Item} in this \hyperlink{classregistry_1_1Registry}{Registry}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Reg\+Item$>$ A std\+::vector of all matched Reg\+Items. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classregistry_1_1AbstractRegistry_a978d5b55eeea945b0cc441e28a084518}{registry\+::\+Abstract\+Registry}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classregistry_1_1Registry_a15423d8f77a60eb8de72b851d2d34318_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_a64553c5b4bc597a69876b614fe1eeab3}\label{classregistry_1_1Registry_a64553c5b4bc597a69876b614fe1eeab3}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+\hyperlink{classregistry_1_1Registry}{Registry}\& \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Registry}{Registry}$<$ C $>$ const \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_a3faca0c879dc001f097ba069c13cf6a1}\label{classregistry_1_1Registry_a3faca0c879dc001f097ba069c13cf6a1}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!operator=@{operator=}}
+\index{operator=@{operator=}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+\hyperlink{classregistry_1_1Registry}{Registry}\& \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::operator= (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Registry}{Registry}$<$ C $>$ \&\&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classregistry_1_1Registry_a2d44265acc3db0fdea9df1a67a14206c}\label{classregistry_1_1Registry_a2d44265acc3db0fdea9df1a67a14206c}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Register@{Register}}
+\index{Register@{Register}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Register (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Register a new \hyperlink{classregistry_1_1RegItem}{Reg\+Item} with this \hyperlink{classregistry_1_1Registry}{Registry}. 
+
+If an equivalent \hyperlink{classregistry_1_1RegItem}{Reg\+Item} is already registered in this \hyperlink{classregistry_1_1Registry}{Registry}, this method does not nothing and returns.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ri} & \hyperlink{classregistry_1_1RegItem}{Reg\+Item} to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classregistry_1_1AbstractRegistry_a5deafe61aa33b1be6b261d815e7397a1}{registry\+::\+Abstract\+Registry}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classregistry_1_1Registry_a2d44265acc3db0fdea9df1a67a14206c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_ac3c1835aad71067924526040fccc5ce3}\label{classregistry_1_1Registry_ac3c1835aad71067924526040fccc5ce3}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Remove\+Callback@{Remove\+Callback}}
+\index{Remove\+Callback@{Remove\+Callback}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Remove\+Callback()}{RemoveCallback()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Remove\+Callback (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1Filter}{Filter}}]{flt,  }\item[{\hyperlink{classregistry_1_1AbstractRegistry_a08a798ca9ca1c4c983ebd2386ca3c315}{Callback}}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Implements \hyperlink{classregistry_1_1AbstractRegistry_ae09a4b165d916b6c212988d882d1a33f}{registry\+::\+Abstract\+Registry}.
+
+\mbox{\Hypertarget{classregistry_1_1Registry_ad020a0ef83e4a29064ad95baf2e0796f}\label{classregistry_1_1Registry_ad020a0ef83e4a29064ad95baf2e0796f}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Unregister (\begin{DoxyParamCaption}\item[{\hyperlink{classregistry_1_1RegItem}{Reg\+Item}}]{ri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Unregister a \hyperlink{classregistry_1_1RegItem}{Reg\+Item} present in this \hyperlink{classregistry_1_1Registry}{Registry}. 
+
+If the \hyperlink{classregistry_1_1RegItem}{Reg\+Item} is not present in the registry, this method does nothing and returns without any error indication
+
+
+\begin{DoxyParams}{Parameters}
+{\em ri} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classregistry_1_1AbstractRegistry_ac5bb3b6a75a63a474f6b0afb31ea51c1}{registry\+::\+Abstract\+Registry}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classregistry_1_1Registry_ad020a0ef83e4a29064ad95baf2e0796f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classregistry_1_1Registry_a984878071c9b250148282b2b08bf999b}\label{classregistry_1_1Registry_a984878071c9b250148282b2b08bf999b}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!Wait@{Wait}}
+\index{Wait@{Wait}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily template$<$typename C $>$ \\
+void \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::Wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Blocks on the underlying channel C. 
+
+It calls the \hyperlink{classregistry_1_1Registry_a984878071c9b250148282b2b08bf999b}{Wait()} method on channel C to block and wait for incomming requests. Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classregistry_1_1Registry_a984878071c9b250148282b2b08bf999b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classregistry_1_1Registry_a12c8c9619c8f4ad1fba66b58b4da0dca}\label{classregistry_1_1Registry_a12c8c9619c8f4ad1fba66b58b4da0dca}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!downstream\+\_\+@{downstream\+\_\+}}
+\index{downstream\+\_\+@{downstream\+\_\+}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{downstream\+\_\+}{downstream\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+C \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::downstream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The communication channel used to access this \hyperlink{classregistry_1_1Registry}{Registry}. 
+
+\mbox{\Hypertarget{classregistry_1_1Registry_a027d968f8cf69061ba3a3ed5e0801874}\label{classregistry_1_1Registry_a027d968f8cf69061ba3a3ed5e0801874}} 
+\index{registry\+::\+Registry@{registry\+::\+Registry}!pimpl\+\_\+@{pimpl\+\_\+}}
+\index{pimpl\+\_\+@{pimpl\+\_\+}!registry\+::\+Registry@{registry\+::\+Registry}}
+\subsubsection{\texorpdfstring{pimpl\+\_\+}{pimpl\_}}
+{\footnotesize\ttfamily template$<$typename C$>$ \\
+std\+::unique\+\_\+ptr$<$\hyperlink{classregistry_1_1Registry_1_1Impl}{Impl}$>$ \hyperlink{classregistry_1_1Registry}{registry\+::\+Registry}$<$ C $>$\+::pimpl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A pointer to the private implemenation of \hyperlink{classregistry_1_1Registry}{Registry}, implementing the P\+I\+M\+PL idiom. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+registry/src/\hyperlink{registry__core_8hpp}{registry\+\_\+core.\+hpp}\end{DoxyCompactItemize}
