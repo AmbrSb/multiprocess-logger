@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['loc_5f',['loc_',['../classregistry_1_1RegItem.html#aa8a85387cb5e35272674075fb73dd01e',1,'registry::RegItem']]],
-  ['lookup',['Lookup',['../classregistry_1_1ExtractorRegistryClient.html#aae214dba3e9dabd81844e6dfa3958eeb',1,'registry::ExtractorRegistryClient::Lookup()'],['../classregistry_1_1ExtractorRegistryClient_1_1Impl.html#aee705dc8ca2a3056bbb45ef25c57de16',1,'registry::ExtractorRegistryClient::Impl::Lookup()'],['../classregistry_1_1AbstractRegistry.html#a978d5b55eeea945b0cc441e28a084518',1,'registry::AbstractRegistry::Lookup()'],['../classregistry_1_1RegistrySuper.html#a83240eacc385688b32998c1e83d086c5',1,'registry::RegistrySuper::Lookup()'],['../classregistry_1_1RegistryImplVec.html#aa867888a52cd296e94f30da2770529ce',1,'registry::RegistryImplVec::Lookup()'],['../classregistry_1_1RegistryImplSQLite.html#ac2c846357de9bc83654193057a7edca1',1,'registry::RegistryImplSQLite::Lookup()'],['../classregistry_1_1ComService.html#a06ba4b402944f87dbce6c2ce37d8c279',1,'registry::ComService::Lookup()'],['../classregistry_1_1ClientComChannel.html#a564ba5480214a74c5697120084cafb54',1,'registry::ClientComChannel::Lookup()']]],
-  ['lookupfailed',['LookupFailed',['../classregistry_1_1LookupFailed.html',1,'registry']]]
-];

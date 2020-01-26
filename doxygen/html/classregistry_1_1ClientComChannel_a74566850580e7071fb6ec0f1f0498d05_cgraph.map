@@ -1,5 +1,0 @@
-<map id="registry::ClientComChannel::Unregister" name="registry::ClientComChannel::Unregister">
-<area shape="rect" id="node2" href="$classregistry_1_1RegItem.html#a36de17d47505b30932fb0666e151a3a5" title="registry::RegItem::\lGetName" alt="" coords="236,5,367,47"/>
-<area shape="rect" id="node3" href="$classregistry_1_1RegItem.html#a97aa7215ece49480a08c9cce9f8ed391" title="registry::RegItem::\lGetLocation" alt="" coords="236,71,367,112"/>
-<area shape="rect" id="node4" href="$namespaceregistry.html#a3aea015bffedea5734787cec200bfe1b" title="registry::operator==" alt="" coords="415,78,551,105"/>
-</map>

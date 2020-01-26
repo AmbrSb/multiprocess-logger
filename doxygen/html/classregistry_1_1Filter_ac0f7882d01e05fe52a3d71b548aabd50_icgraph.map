@@ -1,5 +1,0 @@
-<map id="registry::Filter::GetFilterText" name="registry::Filter::GetFilterText">
-<area shape="rect" id="node2" href="$classregistry_1_1RegistryImplSQLite.html#a75eb46a6b3fb0f1abd01e409d989462d" title="registry::RegistryImplSQLite\l::CheckFilters" alt="" coords="240,5,427,47"/>
-<area shape="rect" id="node3" href="$classregistry_1_1ClientComChannel.html#a564ba5480214a74c5697120084cafb54" title="registry::ClientComChannel\l::Lookup" alt="" coords="242,71,425,112"/>
-<area shape="rect" id="node4" href="$classregistry_1_1ExtractorRegistryClient_1_1Impl.html#aee705dc8ca2a3056bbb45ef25c57de16" title="registry::ExtractorRegistry\lClient::Impl::Lookup" alt="" coords="475,71,649,112"/>
-</map>

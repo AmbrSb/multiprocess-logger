@@ -1,5 +1,0 @@
-<map id="ServiceManager::Activate" name="ServiceManager::Activate">
-<area shape="rect" id="node2" href="$classServiceManager.html#a88f70377d5303fe8ddf0c09a31f52685" title="ServiceManager::Monitor" alt="" coords="225,35,392,61"/>
-<area shape="rect" id="node3" href="$classServiceManager.html#a57a9b4739ef6da5f70bef63a6b878b41" title="ServiceManager::Start" alt="" coords="467,5,619,32"/>
-<area shape="rect" id="node4" href="$classServiceManager.html#abaa048208d3f357f320f89f108e5bada" title="ServiceManager::DetectService\lProcessStatus" alt="" coords="440,57,647,98"/>
-</map>
